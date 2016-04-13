@@ -1,4 +1,4 @@
-package com.abangfadli.simplemvp;
+package com.abangfadli.commonutils;
 
 import android.widget.TextView;
 
