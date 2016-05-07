@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
 
 android {
     compileSdkVersion 23
@@ -17,8 +19,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility 1.8
-        sourceCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
