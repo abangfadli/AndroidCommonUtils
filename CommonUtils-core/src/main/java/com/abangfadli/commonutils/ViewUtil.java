@@ -12,7 +12,7 @@ public class ViewUtil {
         }
     }
 
-    public static void setTextIfNotNull(TextView tv, String text, String defaultIfNull) {
+    public static void setText(TextView tv, String text, String defaultIfNull) {
         if(!StringUtil.isNullOrEmpty(text)) {
             tv.setText(text);
         } else {
