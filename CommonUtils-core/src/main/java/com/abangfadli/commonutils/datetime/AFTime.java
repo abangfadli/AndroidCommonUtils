@@ -49,4 +49,17 @@ public class AFTime implements Comparable<AFTime>{
 
         return dif;
     }
+
+    @Override
+    public String toString() {
+        return toString(true);
+    }
+
+    public String toString(boolean includeSecond) {
+        if(includeSecond) {
+            return String.format("%s:%s:%s", hour, minute, second);
+        } else {
+            return String.format("%s:%s", hour, minute);
+        }
+    }
 }
