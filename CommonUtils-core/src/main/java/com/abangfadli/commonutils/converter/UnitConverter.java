@@ -8,11 +8,11 @@ import android.util.TypedValue;
  */
 
 public class UnitConverter {
-    public float sp_px(Context context, float sp) {
+    public static float sp_px(Context context, float sp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp, context.getResources().getDisplayMetrics());
     }
 
-    public float dp_px(Context context, float dp) {
+    public static float dp_px(Context context, float dp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());
     }
 }
